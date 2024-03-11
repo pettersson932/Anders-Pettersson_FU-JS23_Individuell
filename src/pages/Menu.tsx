@@ -5,7 +5,7 @@ import Header from "../header/Header";
 const Menu = () => {
   return (
     <div>
-      <Header />
+      <Header showCartIcon={true} />
       <MainNav />
       <h2>Meny</h2>
       <MenuItems />

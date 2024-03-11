@@ -7,6 +7,7 @@ const useResponse = create((set) => ({
     set(() => ({
       resp: {
         // Directly setting eta and ordernummer in resp
+        orderInProgress: true,
         eta: eta,
         ordernummer: ordernummer,
       },

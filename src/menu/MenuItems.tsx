@@ -3,7 +3,7 @@ import useProducts from "../globals/Products";
 const MenuItems = () => {
   const { items, increaseCount } = useProducts();
   return (
-    <div>
+    <section className="menu">
       {items.map((item, index) => (
         <article key={index}>
           <button onClick={() => increaseCount(item.title)}>
@@ -14,7 +14,7 @@ const MenuItems = () => {
           <p>{item.price}</p>
         </article>
       ))}
-    </div>
+    </section>
   );
 };
 
