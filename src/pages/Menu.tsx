@@ -1,21 +1,12 @@
-import useProducts from "../globals/Products";
+import MenuItems from "../menu/MenuItems";
+import MainNav from "../nav/MainNav";
 
 const Menu = () => {
-  const { items, increaseCount } = useProducts();
-
-  const MenuItems = items.map((item) => (
-    <>
-      <button onClick={() => increaseCount(item.title)}> ADD </button>
-      <h4>{item.title}</h4>
-      <p>{item.price}</p>
-      <p>{item.count}</p>
-    </>
-  ));
-
   return (
     <div>
+      <MainNav />
       <h2>Meny</h2>
-      {MenuItems}
+      <MenuItems />
     </div>
   );
 };

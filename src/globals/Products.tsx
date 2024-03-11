@@ -12,6 +12,12 @@ const useProducts = create((set) => ({
         item.title === title ? { ...item, count: item.count + 1 } : item
       ),
     })),
+  decreaseCount: (title) =>
+    set((state) => ({
+      items: state.items.map((item) =>
+        item.title === title ? { ...item, count: item.count - 1 } : item
+      ),
+    })),
 }));
 
 export default useProducts;
