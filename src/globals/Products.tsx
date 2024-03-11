@@ -2,9 +2,48 @@ import { create } from "zustand";
 
 const useProducts = create((set) => ({
   items: [
-    { title: "Bryggkaffe", price: 10, count: 0 },
-    { title: "Bryggkaffe2", price: 22, count: 1 },
-    { title: "Bryggkaffe3", price: 23, count: 2 },
+    {
+      id: "coffee-vxig26my4y",
+      title: "Bryggkaffe",
+      desc: "Bryggd på månadens bönor.",
+      price: 39,
+      count: 0,
+    },
+    {
+      id: "coffee-220dodpzmg",
+      title: "Caffè Doppio",
+      desc: "Bryggd på månadens bönor.",
+      price: 49,
+      count: 0,
+    },
+    {
+      id: "coffee-4pdksmrkfa",
+      title: "Cappuccino",
+      desc: "Bryggd på månadens bönor.",
+      price: 49,
+      count: 0,
+    },
+    {
+      id: "coffee-m2h37k2mnh",
+      title: "Latte Macchiato",
+      desc: "Bryggd på månadens bönor.",
+      price: 49,
+      count: 0,
+    },
+    {
+      id: "coffee-0lp6ter3bh",
+      title: "Kaffe Latte",
+      desc: "Bryggd på månadens bönor.",
+      price: 54,
+      count: 0,
+    },
+    {
+      id: "coffee-e8hz0lk7q5",
+      title: "Cortado",
+      desc: "Bryggd på månadens bönor.",
+      price: 39,
+      count: 0,
+    },
   ],
   increaseCount: (title) =>
     set((state) => ({

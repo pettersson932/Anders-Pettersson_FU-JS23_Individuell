@@ -13,6 +13,9 @@ const MainNav = () => {
         <li>
           <Link to="/cart">Cart</Link>
         </li>
+        <li>
+          <Link to="/status">Status</Link>
+        </li>
       </ul>
     </nav>
   );
