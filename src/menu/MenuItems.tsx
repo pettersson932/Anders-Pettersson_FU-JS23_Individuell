@@ -12,8 +12,6 @@ const MenuItems = () => {
           <h3>{item.title}</h3>
 
           <p>{item.price}</p>
-
-          <p>{item.count}</p>
         </article>
       ))}
     </div>

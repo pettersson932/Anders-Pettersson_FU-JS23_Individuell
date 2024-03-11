@@ -1,0 +1,33 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #2f2926;
+
+  &__close {
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  &__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 30px;
+    height: 100vh;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+  }
+  &__li:not(:last-child) {
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+  }
+}
