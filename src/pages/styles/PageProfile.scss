@@ -14,8 +14,7 @@
   background: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   gap: 20px;
   background: #f3e4e1;
   padding: 20px;
@@ -23,10 +22,11 @@
 .pageProfile__form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
 }
 .pageProfile__form input {
   background: #f3e4e1;
+  font-size: 32px;
+  margin: 10px 0;
 }
 .pageProfile__form__button {
   color: white;
@@ -34,4 +34,11 @@
   border-radius: 20px;
   padding: 15px 10px;
   cursor: pointer;
+  margin-top: 40px;
+  margin: auto;
+  font-size: 24px;
+}
+.pageProfile__logo__container {
+  display: flex;
+  justify-content: center;
 }

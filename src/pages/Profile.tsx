@@ -22,8 +22,8 @@ const Profile = () => {
       <Header />
       <MainNav />
       <div className="pageProfile__content">
-        <figure>
-          <img src={Logo} alt="logo" className="pageProfil__logo" />
+        <figure className="pageProfile__logo__container">
+          <img src={Logo} alt="logo" className="pageProfile__logo" />
         </figure>
         <h1>Välkommen till Airbean-familjen!</h1>
 
