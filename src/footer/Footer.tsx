@@ -1,5 +1,4 @@
 import FooterBackground from "../assets/images/footer.png";
-import "./Footer.scss";
 
 const Footer = () => {
   return (

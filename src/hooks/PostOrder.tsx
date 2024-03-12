@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import useProducts from "../globals/Products";
 import { useNavigate } from "react-router-dom";
 import useResponse from "../globals/Resp";
@@ -7,7 +6,6 @@ import "./PostOrder.scss";
 function PostOrder(props) {
   const navigate = useNavigate();
   const { setResponse } = useResponse();
-  const [dataResponse, setDataResponse] = useState(null);
   const { items } = useProducts();
   const itemsSorted = items
     .filter((item) => item.count > 0)

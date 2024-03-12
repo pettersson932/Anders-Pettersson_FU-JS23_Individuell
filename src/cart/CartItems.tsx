@@ -10,7 +10,6 @@ const CartItems = () => {
   const [totalprice, setTotalPrice] = useState(0);
   const [cartNotEmpty, setCartNotEmpty] = useState(false);
 
-  // Calculate total price whenever items change
   useEffect(() => {
     let totalPrice = 0;
     items.forEach((item) => {
