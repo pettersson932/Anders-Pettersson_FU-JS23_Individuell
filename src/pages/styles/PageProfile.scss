@@ -5,4 +5,33 @@
   justify-content: space-between;
   width: 375px;
   margin: auto;
+  background: gray;
+}
+.pageProfile__content {
+  border: 2px solid black;
+  flex: 1;
+  margin: -25px 10px 10px 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: #f3e4e1;
+  padding: 20px;
+}
+.pageProfile__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pageProfile__form input {
+  background: #f3e4e1;
+}
+.pageProfile__form__button {
+  color: white;
+  background: black;
+  border-radius: 20px;
+  padding: 15px 10px;
+  cursor: pointer;
 }
