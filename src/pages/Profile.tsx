@@ -4,6 +4,7 @@ import MainNav from "../nav/MainNav";
 import Footer from "../footer/Footer";
 import Logo from "../assets/logo/grey_small.svg";
 import "./styles/PageProfile.scss";
+import CreateAccount from "../hooks/CreateAccount";
 
 const Profile = () => {
   const [formData, setFormData] = useState({ name: "", email: "" });
@@ -14,7 +15,7 @@ const Profile = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Corrected method name
+    e.preventDefault();
     console.log(formData);
   };
   return (
@@ -38,6 +39,7 @@ const Profile = () => {
           </button>
         </form>
       </div>
+
       <Footer />
     </div>
   );
