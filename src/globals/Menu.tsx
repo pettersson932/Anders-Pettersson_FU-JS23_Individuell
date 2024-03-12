@@ -1,8 +1,9 @@
 import { create } from "zustand";
 
-const useMenu = create((set) => ({
-  isOpen: false,
-  setOpen: (value) => set({ isOpen: value }),
+const useMenuStore = create((set) => ({
+  isMenuOpen: false,
+  openMenu: (value) => set({ isMenuOpen: true }),
+  closeMenu: (value) => set({ isMenuOpen: false }),
 }));
 
-export default useMenu;
+export default useMenuStore;

@@ -1,0 +1,23 @@
+.pageCart {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin: auto;
+  background: gray;
+}
+
+.pageCart__content {
+  border: 2px solid black;
+  flex: 1;
+  margin: -25px 10px 10px 10px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+}

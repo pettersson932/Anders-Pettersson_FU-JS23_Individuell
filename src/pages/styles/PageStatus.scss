@@ -1,0 +1,32 @@
+.pageStatus {
+  background: #e5674e;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  justify-content: space-around;
+  text-align: center;
+  width: 375px;
+  margin: auto;
+  padding: 0 40px;
+
+  &__ordernummer {
+    font-weight: 700;
+  }
+
+  &__message {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  &__minutes {
+    font-weight: 700;
+  }
+
+  &__button {
+    font-size: 24px;
+
+    border-radius: 25px;
+    padding: 15px 10px;
+  }
+}

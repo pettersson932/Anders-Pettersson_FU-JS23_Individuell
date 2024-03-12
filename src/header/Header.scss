@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* Add padding to accommodate the cart count */
+  padding-right: 50px; /* Adjust this value as needed */
+
+  &__openMenu {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  &__openCart {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: gray;
+    padding: 15px;
+    border-radius: 50%;
+    color: #2f2926;
+  }
+
+  &__cartCount {
+    background: #e5674e;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+}

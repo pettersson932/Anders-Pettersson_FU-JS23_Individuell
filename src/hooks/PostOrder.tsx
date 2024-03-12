@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import useProducts from "../globals/Products";
 import { useNavigate } from "react-router-dom";
-
 import useResponse from "../globals/Resp";
+import "./PostOrder.scss";
 
-function PostOrder() {
+function PostOrder(props) {
   const navigate = useNavigate();
   const { setResponse } = useResponse();
   const [dataResponse, setDataResponse] = useState(null);
@@ -42,8 +42,14 @@ function PostOrder() {
   };
 
   return (
-    <div>
-      <button onClick={postData}>Make Order</button>
+    <div className="postOrder">
+      <button
+        disabled={!props.cartNotEmpty}
+        onClick={postData}
+        className="postOrder__button"
+      >
+        Take my money!
+      </button>
     </div>
   );
 }

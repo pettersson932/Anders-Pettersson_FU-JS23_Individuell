@@ -1,16 +1,17 @@
 import MainNav from "../nav/MainNav";
 import CartItems from "../cart/CartItems";
-import PostOrder from "../hooks/PostOrder";
 import Header from "../header/Header";
+import "./styles/PageCart.scss";
 
 const Cart = () => {
   return (
-    <div>
-      <Header />
+    <div className="pageCart">
+      <Header showCartOpen={true} />
       <MainNav />
-      <h2>Cart</h2>
-      <CartItems />
-      <PostOrder />
+      <div className="pageCart__content">
+        <h1>Din Beställning</h1>
+        <CartItems />
+      </div>
     </div>
   );
 };

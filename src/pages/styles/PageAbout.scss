@@ -1,0 +1,27 @@
+.pageAbout {
+  min-height: 100vh;
+  display: flex;
+  width: 375px;
+  margin: auto;
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__content {
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+.about__founder {
+  text-align: center;
+}
+
+.about__founder > * {
+  padding-top: 10px;
+}
