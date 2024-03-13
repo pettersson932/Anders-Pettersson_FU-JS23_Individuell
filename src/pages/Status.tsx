@@ -28,7 +28,7 @@ const Status = () => {
 
           <p className="pageStatus__minutes">{resp.eta} minuter</p>
 
-          <button className="pageStatus__button">"Ok, cool"</button>
+          <button className="pageStatus__button">Ok, cool</button>
         </>
       ) : (
         <>

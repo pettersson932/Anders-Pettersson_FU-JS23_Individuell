@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Assuming you intend to use this later
-import "./PostOrder.scss";
 
-function CreateAccount(props) {
-  const [response, setResponse] = useState();
+function useCreateAccount() {
+  const [response, setResponse] = useState({ success: false, message: "" });
+  const [error, setError] = useState(null);
 
-  const postData = async () => {
+  const createAccount = async (name, email) => {
     try {
       const response = await fetch(
         "https://airbean-api-xjlcn.ondigitalocean.app/api/user/signup",
@@ -15,21 +14,21 @@ function CreateAccount(props) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            username: props.name,
-            password: props.email,
+            username: name,
+            password: email,
           }),
         }
       );
       const data = await response.json();
       console.log(data);
-      setResponse(data);
+      setResponse({ success: data.success, message: data.message });
     } catch (error) {
       console.error("Error:", error);
+      setError(error);
     }
-    postData();
   };
 
-  return null;
+  return { createAccount, response, error };
 }
 
-export default CreateAccount;
+export default useCreateAccount;
