@@ -1,13 +1,8 @@
 .pageStatus {
   background: #e5674e;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   color: #ffffff;
   justify-content: space-around;
-  text-align: center;
-  width: 375px;
-  margin: auto;
+  align-items: center;
   padding: 0 40px;
 
   &__ordernummer {
@@ -17,6 +12,7 @@
   &__message {
     font-size: 36px;
     font-weight: 700;
+    text-align: center;
   }
 
   &__minutes {
@@ -26,6 +22,7 @@
   &__button {
     font-size: 24px;
     border-radius: 25px;
-    padding: 15px 10px;
+    padding: 10px 25px;
+    cursor: pointer;
   }
 }

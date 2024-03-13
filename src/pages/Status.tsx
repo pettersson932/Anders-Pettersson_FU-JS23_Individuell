@@ -1,15 +1,16 @@
+import { useNavigate } from "react-router-dom";
 import useResponse from "../globals/Resp";
 import DroneNoOrder from "../assets/images/droneNoDeliver.png";
 import DroneOrder from "../assets/images/droneDeliver.png";
+import "./styles/Page.scss";
 import "./styles/PageStatus.scss";
-import { useNavigate } from "react-router-dom";
 
 const Status = () => {
   const navigate = useNavigate();
   const { resp } = useResponse();
 
   return (
-    <div className="pageStatus">
+    <div className="page pageStatus">
       <p>
         {resp.orderInProgress && (
           <>

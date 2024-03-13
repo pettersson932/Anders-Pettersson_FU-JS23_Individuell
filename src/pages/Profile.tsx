@@ -3,6 +3,7 @@ import Header from "../components/header/Header";
 import MainNav from "../components/nav/MainNav";
 import Footer from "../components/footer/Footer";
 import Logo from "../assets/logo/grey_small.svg";
+import "./styles/Page.scss";
 import "./styles/PageProfile.scss";
 
 const Profile = () => {
@@ -18,7 +19,7 @@ const Profile = () => {
     console.log(formData);
   };
   return (
-    <div className="pageProfile">
+    <div className="page pageProfile">
       <Header />
       <MainNav />
       <div className="pageProfile__content">

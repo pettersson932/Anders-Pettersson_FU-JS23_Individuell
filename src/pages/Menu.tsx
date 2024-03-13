@@ -4,12 +4,13 @@ import useProducts from "../globals/Products";
 import AddIcon from "../assets/icons/add.png";
 import Footer from "../components/footer/Footer";
 import FetchMenu from "../hooks/FetchMenu";
+import "./styles/Page.scss";
 import "./styles/PageMenu.scss";
 
 const Menu = () => {
   const { items, increaseCount } = useProducts();
   return (
-    <div className="pageMenu">
+    <div className="page pageMenu">
       <FetchMenu />
       <Header showCartOpen={true} />
       <MainNav />

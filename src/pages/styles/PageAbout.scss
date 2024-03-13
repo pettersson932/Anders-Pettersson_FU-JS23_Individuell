@@ -1,11 +1,5 @@
 .pageAbout {
-  min-height: 100vh;
-  display: flex;
-  width: 375px;
-  margin: auto;
   background: #f3e4e1;
-  flex-direction: column;
-  justify-content: space-between;
 
   &__content {
     padding: 0 40px;
