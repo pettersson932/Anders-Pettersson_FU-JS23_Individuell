@@ -1,4 +1,4 @@
-import MainNav from "../nav/MainNav";
+import MainNav from "../components/nav/MainNav";
 import "./styles/PageStyles.scss";
 import useMenuStore from "../globals/Menu";
 import "./styles/PageLanding.scss";

@@ -1,4 +1,4 @@
-import MainNav from "../nav/MainNav";
+import MainNav from "../components/nav/MainNav";
 import useResponse from "../globals/Resp";
 import DroneNoOrder from "../assets/images/droneNoDeliver.png";
 import DroneOrder from "../assets/images/droneDeliver.png";

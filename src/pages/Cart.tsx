@@ -1,6 +1,6 @@
-import MainNav from "../nav/MainNav";
+import MainNav from "../components/nav/MainNav";
 import CartItems from "../cart/CartItems";
-import Header from "../header/Header";
+import Header from "../components/header/Header";
 import "./styles/PageCart.scss";
 
 const Cart = () => {

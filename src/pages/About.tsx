@@ -1,7 +1,7 @@
-import Header from "../header/Header";
+import Header from "../components/header/Header";
 import FounderImage from "../assets/images/profile__founder.png";
-import MainNav from "../nav/MainNav";
-import Footer from "../footer/Footer";
+import MainNav from "../components/nav/MainNav";
+import Footer from "../components/footer/Footer";
 import "./styles/PageStyles.scss";
 import "./styles/PageAbout.scss";
 

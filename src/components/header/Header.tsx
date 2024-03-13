@@ -1,10 +1,10 @@
-import OpenNav from "../assets/icons/nav.png";
-import useMenuStore from "../globals/Menu";
+import OpenNav from "../../assets/icons/nav.png";
+import useMenuStore from "../../globals/Menu";
 import { useNavigate } from "react-router-dom";
 import "./Header.scss";
-import BackgroundImage from "../assets/images/header.png";
-import OpenCart from "../assets/icons/cart.png";
-import useProducts from "../globals/Products";
+import BackgroundImage from "../../assets/images/header.png";
+import OpenCart from "../../assets/icons/cart.png";
+import useProducts from "../../globals/Products";
 
 const Header = (props) => {
   const { openMenu } = useMenuStore();

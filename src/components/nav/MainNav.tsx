@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import useMenuStore from "../globals/Menu";
+import useMenuStore from "../../globals/Menu";
 import "./MainNav.scss";
-import CloseNavIcon from "../assets/icons/close.png";
+import CloseNavIcon from "../../assets/icons/close.png";
 
 const MainNav = () => {
   const { isMenuOpen, closeMenu } = useMenuStore();

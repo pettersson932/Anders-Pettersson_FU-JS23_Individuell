@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Header from "../header/Header";
-import MainNav from "../nav/MainNav";
-import Footer from "../footer/Footer";
+import Header from "../components/header/Header";
+import MainNav from "../components/nav/MainNav";
+import Footer from "../components/footer/Footer";
 import Logo from "../assets/logo/grey_small.svg";
 import "./styles/PageProfile.scss";
 import CreateAccount from "../hooks/CreateAccount";

@@ -8,18 +8,16 @@ import Status from "./pages/Status";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/status" element={<Status />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/status" element={<Status />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

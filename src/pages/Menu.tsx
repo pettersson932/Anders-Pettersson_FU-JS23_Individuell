@@ -1,11 +1,11 @@
 import MenuItems from "../menu/MenuItems";
-import MainNav from "../nav/MainNav";
-import Header from "../header/Header";
+import MainNav from "../components/nav/MainNav";
+import Header from "../components/header/Header";
 import "./styles/PageStyles.scss";
 import "./styles/PageMenu.scss";
 import useProducts from "../globals/Products";
 import AddIcon from "../assets/icons/add.png";
-import Footer from "../footer/Footer";
+import Footer from "../components/footer/Footer";
 import Fetch from "../hooks/Fetch";
 
 const Menu = () => {
