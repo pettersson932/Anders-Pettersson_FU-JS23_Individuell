@@ -4,7 +4,6 @@ import MainNav from "../components/nav/MainNav";
 import Footer from "../components/footer/Footer";
 import Logo from "../assets/logo/grey_small.svg";
 import "./styles/PageProfile.scss";
-import CreateAccount from "../hooks/CreateAccount";
 
 const Profile = () => {
   const [formData, setFormData] = useState({ name: "", email: "" });

@@ -1,5 +1,4 @@
 import MainNav from "../components/nav/MainNav";
-import "./styles/PageStyles.scss";
 import useMenuStore from "../globals/Menu";
 import "./styles/PageLanding.scss";
 import Logo from "../assets/logo/airbean__small__white.png";

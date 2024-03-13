@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import useProducts from "../globals/Products";
 
-function Fetch() {
+function FetchMenu() {
   const [apiData, setApiData] = useState([]);
   const { addProduct } = useProducts();
 
@@ -26,4 +26,4 @@ function Fetch() {
   return null;
 }
 
-export default Fetch;
+export default FetchMenu;

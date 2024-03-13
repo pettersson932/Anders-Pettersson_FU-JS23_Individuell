@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: 375px;
   margin: auto;
-
+  background: #f3e4e1;
   &__content {
     display: flex;
     flex-direction: column;
@@ -14,15 +14,15 @@
   &__price {
     display: flex;
   }
-}
-.pageMenu h1 {
-  text-align: center;
-  padding: 20px;
-}
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 1s0px;
+  & h1 {
+    text-align: center;
+    padding: 20px;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1s0px;
+  }
 }
 
 .menuItem {

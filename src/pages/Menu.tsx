@@ -1,18 +1,16 @@
-import MenuItems from "../menu/MenuItems";
 import MainNav from "../components/nav/MainNav";
 import Header from "../components/header/Header";
-import "./styles/PageStyles.scss";
-import "./styles/PageMenu.scss";
 import useProducts from "../globals/Products";
 import AddIcon from "../assets/icons/add.png";
 import Footer from "../components/footer/Footer";
-import Fetch from "../hooks/Fetch";
+import FetchMenu from "../hooks/FetchMenu";
+import "./styles/PageMenu.scss";
 
 const Menu = () => {
   const { items, increaseCount } = useProducts();
   return (
     <div className="pageMenu">
-      <Fetch />
+      <FetchMenu />
       <Header showCartOpen={true} />
       <MainNav />
       <div className="pageMenu__content">
