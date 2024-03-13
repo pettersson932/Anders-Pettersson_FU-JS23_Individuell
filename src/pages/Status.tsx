@@ -11,36 +11,39 @@ const Status = () => {
 
   return (
     <div className="page pageStatus">
-      <p>
-        {resp.orderInProgress && (
-          <>
-            Ordernummer
-            <span className="pageStatus__ordernummer"> {resp.ordernummer}</span>
-          </>
-        )}
-      </p>
-      <figure>
-        <img
-          src={resp.orderInProgress ? DroneOrder : DroneNoOrder}
-          alt="drone"
-        />
-      </figure>
-      <p className="pageStatus__message">
-        {resp.orderInProgress
-          ? "Din beställning är på väg!"
-          : "Din beställning är INTE på väg!"}
-      </p>
+      {resp.orderInProgress ? (
+        <>
+          <p>
+            <>
+              Ordernummer
+              <span className="pageStatus__ordernummer">
+                {resp.ordernummer}
+              </span>
+            </>
+          </p>
+          <figure>
+            <img src={DroneOrder} alt="drone" />
+          </figure>
+          <p className="pageStatus__message">Din beställning är på väg!</p>
 
-      <p className="pageStatus__minutes">
-        {resp.orderInProgress && `${resp.eta} minuter`}
-      </p>
+          <p className="pageStatus__minutes">{resp.eta} minuter</p>
 
-      <button
-        className="pageStatus__button"
-        onClick={resp.orderInProgress ? null : () => navigate("/menu")}
-      >
-        {resp.orderInProgress ? "Ok, cool" : "Gå till menyn!"}
-      </button>
+          <button className="pageStatus__button">"Ok, cool"</button>
+        </>
+      ) : (
+        <>
+          <figure>
+            <img src={DroneNoOrder} alt="drone" />
+          </figure>
+          <p className="pageStatus__message">Din beställning är INTE på väg!</p>
+          <button
+            className="pageStatus__button"
+            onClick={() => navigate("/menu")}
+          >
+            Gå till menyn!
+          </button>
+        </>
+      )}
     </div>
   );
 };
